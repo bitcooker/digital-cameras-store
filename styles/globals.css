@@ -160,15 +160,14 @@ span.text-red {
 .hero-banner-container h1 {
   color: white;
   font-size: 10em;
-  margin-left: -20px;
   text-transform: uppercase;
 }
 .hero-banner-image {
   position: absolute;
-  top: 0%;
-  right: 20%;
-  width: 450px;
-  height: 450px;
+  top: 10%;
+  right: 5%;
+  width: 350px;
+  height: 350px;
 }
 
 .desc {
@@ -613,10 +612,10 @@ span.text-red {
     height: 560px;
   }
   .hero-banner-image {
-    width: 77%;
-    height: 62%;
-    top: -2%;
-    right: -6%;
+    width: 200px;
+    height: 200px;
+    top: 18%;
+    right: 4%;
   }
   .footer-banner-container {
     height: 560px;
@@ -747,5 +746,13 @@ span.text-red {
   .btn-container {
     width: 300px;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .hero-banner-image {
+    top: 38%;
+    right: 4%;
+    opacity: 0.8;
   }
 }
