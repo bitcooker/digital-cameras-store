@@ -56,10 +56,10 @@ export const StateContext = ({ children }) => {
         const newCartItems = cartItems.filter((item) => item._id !== id)
 
         if (value === 'inc') {
-            setCartItems( prevCartItems => 
-                prevCartItems.map( item => {          
-                    if (item._id === id){
-                        return {...item, quantity: foundProduct.quantity + 1}
+            setCartItems(prevCartItems =>
+                prevCartItems.map(item => {
+                    if (item._id === id) {
+                        return { ...item, quantity: foundProduct.quantity + 1 }
                     }
                     return item
                 })
@@ -68,10 +68,10 @@ export const StateContext = ({ children }) => {
             setTotalQuantities(prevTotalQuantities => prevTotalQuantities + 1)
         } else if (value === 'dec') {
             if (foundProduct.quantity > 1) {
-                setCartItems( prevCartItems => 
-                    prevCartItems.map( item => {          
-                        if (item._id === id){
-                            return {...item, quantity: foundProduct.quantity - 1}
+                setCartItems(prevCartItems =>
+                    prevCartItems.map(item => {
+                        if (item._id === id) {
+                            return { ...item, quantity: foundProduct.quantity - 1 }
                         }
                         return item
                     })
@@ -107,7 +107,10 @@ export const StateContext = ({ children }) => {
             decQty,
             onAdd,
             toggleCartItemQuanitity,
-            onRemove
+            onRemove,
+            setCartItems,
+            setTotalPrice,
+            setTotalQuantities
         }}>
             {children}
         </Context.Provider>
