@@ -1,6 +1,8 @@
 # Digital Cameras
+A Digital camera shop made up of Next.js, React Icons, Stripe payments, Context API, Sanity CMS, toast-notifications, state management, canvas-confetti effects.
 
-Here's a Digital camera shop made up of Next.js, React Icons, Stripe payments, Context API, Sanity CMS, toast-notifications, state management, canvas-confetti effects.
+![Landing](https://user-images.githubusercontent.com/128102810/228641870-2fd7bd3c-ad36-4818-b020-7de07c0dd4b3.PNG)
+
 ## Time to start this project
 
 1. Download or clone this repository
